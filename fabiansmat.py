@@ -1,3 +1,4 @@
+import numpy as np
 from numpy import *
 import matplotlib.pyplot as plt
 from scipy.linalg import eigvalsh
@@ -1790,12 +1791,20 @@ def X(z):
     dtype=complex)
 
 
+def constructArray(y, z, shape=100):
+    m = np.zeros((shape, shape), dtype=complex)
+    return m
+
+
+
+
+
 l_width = 1
 length = 100
-x = linspace(0, 10, length)
-eig = zeros(((length, length)))
+x = np.linspace(0, 10, length)
+eig = np.zeros(((length, length)))
 
-for index, z in ndenumerate(x):
+for index, z in np.ndenumerate(x):
     eig[index, :] = eigvalsh(X(z))
 
 plt.clf()
@@ -1817,3 +1826,4 @@ plt.savefig(
     bbox_inches=None,
     pad_inches=0.1,
     frameon=None)
+
