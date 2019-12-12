@@ -15,5 +15,6 @@ timing...
 ----
 
 
-![](./plots/eigenvals.pdf)
+![](https://i.imgur.com/4tblWMg.jpg)
+
 * I added a best-practice mathematica plot example, happy plotting ;)
