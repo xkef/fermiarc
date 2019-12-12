@@ -14,4 +14,6 @@ timing...
 500 : 42.239498138427734 seconds
 ----
 
+
+![](./plots/eigenvals.pdf)
 * I added a best-practice mathematica plot example, happy plotting ;)
